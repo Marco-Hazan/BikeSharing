@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="600.0" style="-fx-background-color: #477ed5;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.appuser.RegistrazioneController">
+   <children>
+      <Pane fx:id="recPane" layoutX="6.0" layoutY="3.0" prefHeight="442.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="223.0" layoutY="34.0" text="Registrazione" textFill="#d9ff00">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="giornaliero_check" layoutX="122.0" layoutY="144.0" mnemonicParsing="false" onAction="#giornaliero_checked" />
+            <CheckBox fx:id="settimanale_check" layoutX="270.0" layoutY="144.0" mnemonicParsing="false" onAction="#settimanale_checked" />
+            <CheckBox fx:id="annuale_check" layoutX="410.0" layoutY="144.0" mnemonicParsing="false" onAction="#annuale_checked" />
+            <Label layoutX="222.0" layoutY="81.0" text="Tipi di abbonamento:" textFill="WHITE" />
+            <Label layoutX="82.0" layoutY="119.0" text="GIORNALIERO(4.5€)" />
+            <Label layoutX="227.0" layoutY="119.0" text="SETTIMANALE(9€)" />
+            <Label layoutX="386.0" layoutY="119.0" text="ANNUALE(36€)" />
+            <Label layoutX="326.0" layoutY="209.0" text="Sei uno studente?" />
+            <CheckBox fx:id="studente_check" layoutX="445.0" layoutY="209.0" mnemonicParsing="false" onAction="#studente_checked" text="Si" />
+            <CheckBox fx:id="nostudente_check" layoutX="511.0" layoutY="209.0" mnemonicParsing="false" onAction="#nostudente_checked" text="No" />
+            <Label layoutX="273.0" layoutY="260.0" text="Numero di matricola:" />
+            <TextField fx:id="matricola_field" disable="true" layoutX="402.0" layoutY="256.0" />
+            <ChoiceBox fx:id="universita_choicebox" disable="true" layoutX="91.0" layoutY="256.0" prefWidth="150.0" />
+            <Label layoutX="21.0" layoutY="260.0" text="UNIVERSITA':" />
+            <Label layoutX="21.0" layoutY="317.0" text="Password:" />
+            <PasswordField fx:id="pwd_field" layoutX="92.0" layoutY="313.0" />
+            <Label layoutX="272.0" layoutY="317.0" text="Conferma password:" />
+            <Button layoutX="244.0" layoutY="371.0" mnemonicParsing="false" onAction="#goToPagamento" style="-fx-background-color: red;" text="PROCEDI " />
+            <Button layoutX="22.0" layoutY="33.0" mnemonicParsing="false" onAction="#backToLogin" style="-fx-background-color: red;" text="TORNA A LOGIN" />
+            <Label fx:id="error_label" alignment="CENTER" layoutX="138.0" layoutY="413.0" prefHeight="17.0" prefWidth="281.0" textFill="RED" />
+            <Label layoutX="21.0" layoutY="209.0" text="Username:" />
+            <TextField fx:id="usernamerec_field" layoutX="92.0" layoutY="205.0" />
+            <PasswordField fx:id="confermapwd_field" layoutX="402.0" layoutY="313.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="successorec_pane" layoutX="10.0" layoutY="10.0" prefHeight="435.0" prefWidth="571.0" visible="false">
+         <children>
+            <Label layoutX="73.0" layoutY="53.0" text="REGISTRAZIONE AVVENUTA CON SUCCESSO!" textFill="#e1ff00">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="148.0" text="Ecco il tuo codice utente:">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="codice_label" layoutX="297.0" layoutY="150.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="218.0" text="Usa il tuo codice utente per accedere al servizio di bike sharing" />
+            <Label layoutX="45.0" layoutY="258.0" text="Clicca qui:" />
+            <Button layoutX="109.0" layoutY="254.0" mnemonicParsing="false" onAction="#backToLogin" style="-fx-background-color: green;" text="Login" />
+            <Label layoutX="170.0" layoutY="258.0" text="per tornare su login" />
+         </children>
+      </Pane>
+      <Pane fx:id="pagamentoPane" layoutX="10.0" layoutY="10.0" prefHeight="435.0" prefWidth="571.0" visible="false">
+         <children>
+            <Label layoutX="14.0" layoutY="92.0" prefHeight="35.0" prefWidth="542.0" text="Ti stai per iscrivere all'abbonamento annuale, procedendo con il pagamento ti verranno addebitati 36$" />
+            <Label layoutX="14.0" layoutY="127.0" text="e potrai da subito utilizzare il servizio bikesharing con il codice fornito e la password da te scelta " />
+            <Label layoutX="197.0" layoutY="46.0" text="INSERIMENTO DATI CARTA" />
+            <Label layoutX="159.0" layoutY="208.0" text="Numero carta:" />
+            <TextField fx:id="numerocarta_field" layoutX="286.0" layoutY="204.0" />
+            <Label layoutX="159.0" layoutY="266.0" text="CVV:" />
+            <TextField fx:id="cvv_field" layoutX="197.0" layoutY="262.0" prefHeight="25.0" prefWidth="46.0" />
+            <Label layoutX="286.0" layoutY="266.0" text="Scadenza:" />
+            <TextField fx:id="month_field" layoutX="342.0" layoutY="262.0" prefHeight="25.0" prefWidth="37.0" />
+            <Label layoutX="389.0" layoutY="259.0" text="/">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="year_field" layoutX="407.0" layoutY="263.0" prefHeight="25.0" prefWidth="37.0" />
+            <Button layoutX="174.0" layoutY="339.0" mnemonicParsing="false" onAction="#attivaAbbonamento" style="-fx-background-color: green;" text="ATTIVA ABBONAMENTO BIKESHARING" textFill="YELLOW" />
+            <Button layoutX="45.0" layoutY="42.0" mnemonicParsing="false" onAction="#goToRec" text="Indietro" />
+            <Label fx:id="pagamentoerror_label" alignment="CENTER" layoutY="393.0" prefHeight="17.0" prefWidth="571.0" textFill="RED" />
+            <Button layoutX="484.0" layoutY="204.0" mnemonicParsing="false" onAction="#generaNumeroCarta" text="Genera" />
+         </children>
+      </Pane>
+   </children>
+</Pane>

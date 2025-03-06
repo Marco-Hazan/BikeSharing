@@ -3,25 +3,25 @@ package application;
 
 import java.util.Random;
 
-import ClassiPrincipali.Abbonamento;
-import ClassiPrincipali.AbbonamentoFactory;
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaDao;
-import ClassiPrincipali.BiciclettaDaoImpl;
-import ClassiPrincipali.CartaDao;
-import ClassiPrincipali.CartaDaoImpl;
-import ClassiPrincipali.Cassiere;
-import ClassiPrincipali.Cliente;
-import ClassiPrincipali.ClienteDao;
-import ClassiPrincipali.ClienteDaoImpl;
-import ClassiPrincipali.CreditCard;
-import ClassiPrincipali.ValidazioneStudenti;
 import Eccezioni.BikeNotFoundException;
 import Eccezioni.IllegalCardException;
 import Eccezioni.LoginException;
 import Eccezioni.RoofReachedException;
 import Eccezioni.UserNotFoundException;
 import controllers.appuser.RecData;
+import principalclass.Abbonamento;
+import principalclass.AbbonamentoFactory;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaDao;
+import principalclass.BiciclettaDaoImpl;
+import principalclass.CartaDao;
+import principalclass.CartaDaoImpl;
+import principalclass.Cassiere;
+import principalclass.Cliente;
+import principalclass.ClienteDao;
+import principalclass.ClienteDaoImpl;
+import principalclass.CreditCard;
+import principalclass.ValidazioneStudenti;
 
 public class UserApp {
 

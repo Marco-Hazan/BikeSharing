@@ -1,6 +1,6 @@
 package controllers.appuser;
 
-import ClassiPrincipali.CreditCard;
+import principalclass.CreditCard;
 
 public class RecData {
 	

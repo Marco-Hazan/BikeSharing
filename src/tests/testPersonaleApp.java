@@ -8,13 +8,13 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import ClassiPrincipali.BiciclettaFactory;
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDao;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import Eccezioni.BikeNotFoundException;
 import Eccezioni.NoFreeSpotException;
 import application.PersonaleApp;
+import principalclass.BiciclettaFactory;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDao;
+import principalclass.RastrellieraDaoImpl;
 
 public class testPersonaleApp {
 	PersonaleApp apppersonale = new PersonaleApp();

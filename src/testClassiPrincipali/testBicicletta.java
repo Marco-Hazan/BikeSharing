@@ -5,10 +5,10 @@ import static org.junit.Assert.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-import ClassiPrincipali.BiciClassica;
-import ClassiPrincipali.BiciConSeggiolino;
-import ClassiPrincipali.BiciElettrica;
-import ClassiPrincipali.Bicicletta;
+import principalclass.BiciClassica;
+import principalclass.BiciConSeggiolino;
+import principalclass.BiciElettrica;
+import principalclass.Bicicletta;
 
 public class testBicicletta {
 

@@ -3,9 +3,6 @@ package controllers.apppersonale;
 import java.io.IOException;
 import java.util.Set;
 
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaDao;
-import ClassiPrincipali.BiciclettaDaoImpl;
 import Main.MainPersonale;
 import application.PersonaleApp;
 import javafx.event.ActionEvent;
@@ -19,6 +16,9 @@ import javafx.scene.control.Separator;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaDao;
+import principalclass.BiciclettaDaoImpl;
 
 public class biciDanneggiateController {
 
@@ -43,7 +43,7 @@ public class biciDanneggiateController {
     	Set<Bicicletta> damaged = bikes.getBiciDanneggiate();
     	lista_bici.getChildren().clear();
     	if(damaged.size() == 0) {
-    		lista_bici.getChildren().add(new Label("Non c'è nessuna segnalazione di bici danneggiate"));
+    		lista_bici.getChildren().add(new Label("Non c'ï¿½ nessuna segnalazione di bici danneggiate"));
     	}
     	for(Bicicletta b:damaged) {
     		lista_bici.getChildren().add(new Label("Bici: " + b.getCodice() + ", Rastrelliera: "+bikes.getRastrelliera(b)));

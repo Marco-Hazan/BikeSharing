@@ -2,7 +2,6 @@ package controllers.apppersonale;
 
 import java.io.IOException;
 
-import ClassiPrincipali.Statistiche;
 import Main.MainPersonale;
 import application.PersonaleApp;
 import javafx.event.ActionEvent;
@@ -13,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
+import principalclass.Statistiche;
 
 public class HomePersonaleController {
 	
@@ -51,10 +51,10 @@ public class HomePersonaleController {
 		statistichePane.setVisible(true);
 		statistiche_container.getChildren().add(new Label("Numero utenti abbonati: "+Integer.toString(Statistiche.abbonati())));
 		statistiche_container.getChildren().add(new Label("Percentuale studenti: "+Statistiche.percentualeStudenti()));
-		statistiche_container.getChildren().add(new Label("Rastrelliera più usata in partenza: "+Statistiche.getRPartenzaPiuUsata()));
-		statistiche_container.getChildren().add(new Label("Rastrelliera più usata in arrivo: "+Statistiche.getRPartenzaPiuUsata()));
+		statistiche_container.getChildren().add(new Label("Rastrelliera piï¿½ usata in partenza: "+Statistiche.getRPartenzaPiuUsata()));
+		statistiche_container.getChildren().add(new Label("Rastrelliera piï¿½ usata in arrivo: "+Statistiche.getRPartenzaPiuUsata()));
 		statistiche_container.getChildren().add(new Label("Media biciclette usate in un giorno: "+Double.toString(Statistiche.mediaCorse())));
-		statistiche_container.getChildren().add(new Label("Tipo di bicicletta più usata: "+Statistiche.getTipoPiuUsato()));
+		statistiche_container.getChildren().add(new Label("Tipo di bicicletta piï¿½ usata: "+Statistiche.getTipoPiuUsato()));
     }
     
     @FXML

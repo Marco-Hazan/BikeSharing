@@ -3,8 +3,6 @@ package controllers.appuser;
 import java.io.IOException;
 import java.util.Set;
 
-import ClassiPrincipali.Corsa;
-import ClassiPrincipali.GestoreCorse;
 import Main.MainUser;
 import application.UserApp;
 import javafx.event.ActionEvent;
@@ -16,6 +14,8 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
+import principalclass.Corsa;
+import principalclass.GestoreCorse;
 
 public class SegnalaDannoController {
 

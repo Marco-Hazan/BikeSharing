@@ -3,9 +3,6 @@ package controllers.totem;
 import java.io.IOException;
 import java.util.Set;
 
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDao;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import Main.MainTotem;
 import application.TotemApp;
 import javafx.event.ActionEvent;
@@ -29,6 +26,9 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDao;
+import principalclass.RastrellieraDaoImpl;
 
 public class MainTotemController {
 

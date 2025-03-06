@@ -3,9 +3,6 @@ package controllers.apppersonale;
 import java.io.IOException;
 import java.util.Set;
 
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDao;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import Main.MainPersonale;
 import application.PersonaleApp;
 import javafx.event.ActionEvent;
@@ -17,6 +14,9 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDao;
+import principalclass.RastrellieraDaoImpl;
 
 public class AggiungiBiciController {
 

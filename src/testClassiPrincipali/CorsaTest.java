@@ -6,10 +6,10 @@ import java.sql.Timestamp;
 import java.util.Calendar;
 import org.junit.jupiter.api.Test;
 
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaFactory;
-import ClassiPrincipali.Cliente;
-import ClassiPrincipali.Corsa;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaFactory;
+import principalclass.Cliente;
+import principalclass.Corsa;
 
 public class CorsaTest {
 	

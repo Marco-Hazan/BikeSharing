@@ -2,7 +2,6 @@ package controllers.totem;
 
 import java.io.IOException;
 
-import ClassiPrincipali.Rastrelliera;
 import Main.MainTotem;
 import application.TotemApp;
 import javafx.event.ActionEvent;
@@ -25,6 +24,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.TextAlignment;
+import principalclass.Rastrelliera;
 
 public class RunOnGoingController {
 	

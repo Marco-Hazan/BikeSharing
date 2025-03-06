@@ -3,8 +3,6 @@ package controllers.apppersonale;
 import java.io.IOException;
 import java.util.Set;
 
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import Eccezioni.BikeNotFoundException;
 import Eccezioni.NoFreeSpotException;
 import Main.MainPersonale;
@@ -17,6 +15,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDaoImpl;
 
 public class RilocazioneController {
 	

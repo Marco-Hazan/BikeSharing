@@ -2,7 +2,6 @@ package controllers.appuser;
 
 import java.io.IOException;
 
-import ClassiPrincipali.CreditCard;
 import Eccezioni.ExpiredCardException;
 import Eccezioni.IllegalCardException;
 import Main.MainUser;
@@ -15,6 +14,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Paint;
+import principalclass.CreditCard;
 
 public class ModificaPagamentoController {
 

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import ClassiPrincipali.BiciclettaFactory;
 import Eccezioni.BikeNotFoundException;
 import Main.MainTotem;
 import application.TotemApp;
@@ -16,6 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
+import principalclass.BiciclettaFactory;
 
 
 public class BikeChoiceController {

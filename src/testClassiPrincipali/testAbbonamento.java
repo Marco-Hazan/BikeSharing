@@ -6,8 +6,8 @@ import static org.junit.Assert.assertNull;
 
 import org.junit.jupiter.api.Test;
 
-import ClassiPrincipali.Abbonamento;
-import ClassiPrincipali.AbbonamentoFactory;
+import principalclass.Abbonamento;
+import principalclass.AbbonamentoFactory;
 
 public class testAbbonamento {
 

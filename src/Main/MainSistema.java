@@ -4,10 +4,10 @@ import java.util.Set;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import ClassiPrincipali.Cliente;
-import ClassiPrincipali.CorsaDao;
-import ClassiPrincipali.CorsaDaoImpl;
-import ClassiPrincipali.GestoreCorse;
+import principalclass.Cliente;
+import principalclass.CorsaDao;
+import principalclass.CorsaDaoImpl;
+import principalclass.GestoreCorse;
 
 /**
  * Questo main serve per settare le multe.

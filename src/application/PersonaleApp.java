@@ -2,22 +2,22 @@ package application;
 
 import java.util.Set;
 
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaDao;
-import ClassiPrincipali.BiciclettaDaoImpl;
-import ClassiPrincipali.BiciclettaFactory;
-import ClassiPrincipali.GestoreCorse;
-import ClassiPrincipali.PersonaleDao;
-import ClassiPrincipali.PersonaleDaoImpl;
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDao;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import Eccezioni.BikeNotFoundException;
 import Eccezioni.FullRackException;
 import Eccezioni.LoginException;
 import Eccezioni.NoFreeSpotException;
 import Eccezioni.RackNotFoundException;
 import Eccezioni.UserNotFoundException;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaDao;
+import principalclass.BiciclettaDaoImpl;
+import principalclass.BiciclettaFactory;
+import principalclass.GestoreCorse;
+import principalclass.PersonaleDao;
+import principalclass.PersonaleDaoImpl;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDao;
+import principalclass.RastrellieraDaoImpl;
 
 public class PersonaleApp {
 

@@ -3,8 +3,6 @@ package controllers.appuser;
 import java.io.IOException;
 import java.util.Set;
 
-import ClassiPrincipali.Corsa;
-import ClassiPrincipali.GestoreCorse;
 import Main.MainUser;
 import application.UserApp;
 import javafx.event.ActionEvent;
@@ -18,6 +16,8 @@ import javafx.scene.control.Separator;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Paint;
+import principalclass.Corsa;
+import principalclass.GestoreCorse;
 
 public class homepageController {
 
@@ -56,7 +56,7 @@ public class homepageController {
     		statoutente_label.setText("Abbonamento scaduto");
     	}else if(statoutente.equals(UserApp.ANNULLATO)) {
     		statoutente_label.setTextFill(Paint.valueOf("RED"));
-    		statoutente_label.setText("Abbonamento annullato:raggiunte le 3 penalità");
+    		statoutente_label.setText("Abbonamento annullato:raggiunte le 3 penalitï¿½");
     	}else if(statoutente.equals(UserApp.SOSPESO)) {
     		statoutente_label.setTextFill(Paint.valueOf("RED"));
     		statoutente_label.setText("Pagamento non riuscito, cambia metodo di pagamento");
@@ -83,12 +83,12 @@ public class homepageController {
     		}else {
     			String string_multa = "";
     			if(c.multata()) {
-    				string_multa = GestoreCorse.MULTA + "€";
+    				string_multa = GestoreCorse.MULTA + "ï¿½";
     			}else {
     				string_multa = "NO";
     			}
         		lista_corse.getChildren().add(new Label("CORSA CONCLUSA DA "+c.getRPartenza() + " A "+ c.getRArrivo()));
-        		lista_corse.getChildren().add(new Label(" IL "+ c.getStart() + ", DURATA: "+ c.calcola() + " MINUTI, BICICLETTA:"+c.getBike().getCodice()+", PREZZO: "+ c.getPrice() + "€"));
+        		lista_corse.getChildren().add(new Label(" IL "+ c.getStart() + ", DURATA: "+ c.calcola() + " MINUTI, BICICLETTA:"+c.getBike().getCodice()+", PREZZO: "+ c.getPrice() + "ï¿½"));
         		lista_corse.getChildren().add(new Label("MULTA: "+ string_multa));
     		}
     		Separator separator = new Separator();

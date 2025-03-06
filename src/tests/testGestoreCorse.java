@@ -9,23 +9,23 @@ import java.util.Calendar;
 
 import org.junit.jupiter.api.Test;
 
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaDaoImpl;
-import ClassiPrincipali.BiciclettaFactory;
-import ClassiPrincipali.CartaDao;
-import ClassiPrincipali.CartaDaoImpl;
-import ClassiPrincipali.Cliente;
-import ClassiPrincipali.ClienteDao;
-import ClassiPrincipali.ClienteDaoImpl;
-import ClassiPrincipali.Corsa;
-import ClassiPrincipali.CorsaDao;
-import ClassiPrincipali.CorsaDaoImpl;
-import ClassiPrincipali.GestoreCorse;
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDao;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import application.PersonaleApp;
 import application.TotemApp;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaDaoImpl;
+import principalclass.BiciclettaFactory;
+import principalclass.CartaDao;
+import principalclass.CartaDaoImpl;
+import principalclass.Cliente;
+import principalclass.ClienteDao;
+import principalclass.ClienteDaoImpl;
+import principalclass.Corsa;
+import principalclass.CorsaDao;
+import principalclass.CorsaDaoImpl;
+import principalclass.GestoreCorse;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDao;
+import principalclass.RastrellieraDaoImpl;
 
 public class testGestoreCorse {
 	String username_test = "tester";
@@ -48,7 +48,7 @@ public class testGestoreCorse {
 		RastrellieraDao rastrelliere = new RastrellieraDaoImpl();
 		Rastrelliera r = rastrelliere.get("Loreto");
 		apptotem = new TotemApp(r);
-		// verifica che l'utente è abilitato
+		// verifica che l'utente ï¿½ abilitato
 		assertEquals(TotemApp.ABILITATO,apptotem.autenticazione(codice_test, pwd_test));
 		//verifica bici rimanenti dopo che ho estratto una bici sia dalla rastrelliera associata al totem sia guardando direttamente il db
 		assertEquals(1,apptotem.askBike(BiciclettaFactory.CLASSICA));
@@ -57,13 +57,13 @@ public class testGestoreCorse {
 		r = rastrelliere.get("Loreto");
 		assertEquals(29,r.getTot());
 		assertEquals(14,r.getTot(BiciclettaFactory.CLASSICA));
-		//verifica che lo stato dell'utente sia CORSAATTIVA mentre è in corsa
+		//verifica che lo stato dell'utente sia CORSAATTIVA mentre ï¿½ in corsa
 		assertEquals(TotemApp.CORSAATTIVA,apptotem.autenticazione(codice_test, pwd_test));
 		assertFalse(apptotem.valuta(16));
 		assertFalse(apptotem.agganciaBici(16));
 		assertTrue(apptotem.valuta(1));
 		assertTrue(apptotem.agganciaBici(1));
-		//valutazione se la bici agganciata è stata registrata come tale sulla rastrelliera
+		//valutazione se la bici agganciata ï¿½ stata registrata come tale sulla rastrelliera
 		assertEquals(30,apptotem.getRastrelliera().getTot());
 		assertEquals(15,apptotem.getRastrelliera().getTot(BiciclettaFactory.CLASSICA));
 		assertEquals(TotemApp.CORSACONCLUSA,apptotem.autenticazione(codice_test, pwd_test));
@@ -72,7 +72,7 @@ public class testGestoreCorse {
 		rastrelliere.delete("Loreto");
 	}
 	
-	//test che un cliente con debito = 10€ viene considerato come disabilitato
+	//test che un cliente con debito = 10ï¿½ viene considerato come disabilitato
 	@Test
 	public void testaCorsa2() {
 		RastrellieraDao rastrelliere = new RastrellieraDaoImpl();
@@ -85,7 +85,7 @@ public class testGestoreCorse {
 		client.setDebito(0);
 		clienti.update(client);
 	}
-	 //test che un cliente non autenticato non può agganciare una bicicletta
+	 //test che un cliente non autenticato non puï¿½ agganciare una bicicletta
 	@Test
 	public void testaFailures() {
 		RastrellieraDao rastrelliere = new RastrellieraDaoImpl();
@@ -105,7 +105,7 @@ public class testGestoreCorse {
 		assertTrue(apppersonale.aggiungiBici("Loreto", 15, 10, 5));
 		RastrellieraDao rastrelliere = new RastrellieraDaoImpl();
 		CartaDao carte = new CartaDaoImpl();
-		// viene registrata disponibilità carta così da reimpostarla dopo che ho testato
+		// viene registrata disponibilitï¿½ carta cosï¿½ da reimpostarla dopo che ho testato
 		double disp = carte.getDisponibilita(carte.get(numerocarta_test));
 		// creazione di una corsa di 50 minuti
 		GestoreCorse gc = GestoreCorse.getInstance();
@@ -131,7 +131,7 @@ public class testGestoreCorse {
 		carte.update(carte.get(numerocarta_test), - 0.75);
 	}
 	
-	//variante del testaGestore dove si verifica che viene assegnata una penalità
+	//variante del testaGestore dove si verifica che viene assegnata una penalitï¿½
 	@Test
 	public void testaGestore2() {
 		assertTrue(apppersonale.autenticazione(personalecodice, personalepwd));
@@ -165,7 +165,7 @@ public class testGestoreCorse {
 		client.setPen(0);
 		clienti.update(client);
 	}
-	//variante del testaGestore dove si verifica che viene assegnata una multa oltre che una penalità
+	//variante del testaGestore dove si verifica che viene assegnata una multa oltre che una penalitï¿½
 	@Test
 	public void testaGestore3() {
 		assertTrue(apppersonale.autenticazione(personalecodice, personalepwd));
@@ -225,7 +225,7 @@ public class testGestoreCorse {
 		gc.termina(corsa, "Loreto");
 		Corsa c = gc.getLast(client);
 		assertEquals(3.75,c.getPrice(),0.001);
-		// test che la carta ha tenuto la stessa disponibilità
+		// test che la carta ha tenuto la stessa disponibilitï¿½
 		assertEquals(disp,carte.getDisponibilita(carte.get(numerocarta_test)),0.001);
 		//test che il debito viene registrato sul database
 		assertEquals(3.75,client.getDebito(),0.001);

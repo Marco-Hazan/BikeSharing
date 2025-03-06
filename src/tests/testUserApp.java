@@ -9,22 +9,22 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import ClassiPrincipali.AbbonamentoAnnuale;
-import ClassiPrincipali.AbbonamentoFactory;
-import ClassiPrincipali.AbbonamentoSettimanale;
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaDao;
-import ClassiPrincipali.BiciclettaDaoImpl;
-import ClassiPrincipali.CartaDaoImpl;
-import ClassiPrincipali.Cliente;
-import ClassiPrincipali.ClienteDao;
-import ClassiPrincipali.ClienteDaoImpl;
-import ClassiPrincipali.CreditCard;
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDaoImpl;
 import Eccezioni.IllegalCardException;
 import application.UserApp;
 import controllers.appuser.RecData;
+import principalclass.AbbonamentoAnnuale;
+import principalclass.AbbonamentoFactory;
+import principalclass.AbbonamentoSettimanale;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaDao;
+import principalclass.BiciclettaDaoImpl;
+import principalclass.CartaDaoImpl;
+import principalclass.Cliente;
+import principalclass.ClienteDao;
+import principalclass.ClienteDaoImpl;
+import principalclass.CreditCard;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDaoImpl;
 
 public class testUserApp {
 

@@ -2,9 +2,6 @@ package controllers.appuser;
 
 import java.io.IOException;
 
-import ClassiPrincipali.AbbonamentoFactory;
-import ClassiPrincipali.CreditCard;
-import ClassiPrincipali.ValidazioneStudenti;
 import Eccezioni.ExpiredCardException;
 import Eccezioni.IllegalCardException;
 import Eccezioni.RoofReachedException;
@@ -21,6 +18,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
+import principalclass.AbbonamentoFactory;
+import principalclass.CreditCard;
+import principalclass.ValidazioneStudenti;
 
 public class RegistrazioneController {
 
@@ -140,7 +140,7 @@ public class RegistrazioneController {
     @FXML
     void goToPagamento(ActionEvent event) {
     	if(usernamerec_field.getText().equals("")) {
-    		error_label.setText("Il campo username non può essere vuoto");
+    		error_label.setText("Il campo username non puï¿½ essere vuoto");
     		return;
     	}
     	if(!pwd_field.getText().equals(confermapwd_field.getText())) {
@@ -157,7 +157,7 @@ public class RegistrazioneController {
     	}
     	
     	if(!app.usernameUnivoco(usernamerec_field.getText())) {
-    		error_label.setText("Username già utilizzato");
+    		error_label.setText("Username giï¿½ utilizzato");
     		return;
     	}
     	

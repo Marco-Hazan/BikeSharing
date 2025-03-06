@@ -1,20 +1,21 @@
 package application;
 import java.sql.Timestamp;
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaFactory;
-import ClassiPrincipali.Cliente;
-import ClassiPrincipali.ClienteDao;
-import ClassiPrincipali.ClienteDaoImpl;
-import ClassiPrincipali.Corsa;
-import ClassiPrincipali.GestoreCorse;
-import ClassiPrincipali.Rastrelliera;
-import ClassiPrincipali.RastrellieraDao;
-import ClassiPrincipali.RastrellieraDaoImpl;
+
 import Eccezioni.BikeNotFoundException;
 import Eccezioni.LoginException;
 import Eccezioni.MorsaSbagliataException;
 import Eccezioni.PositionOccupiedException;
 import Eccezioni.UserNotFoundException;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaFactory;
+import principalclass.Cliente;
+import principalclass.ClienteDao;
+import principalclass.ClienteDaoImpl;
+import principalclass.Corsa;
+import principalclass.GestoreCorse;
+import principalclass.Rastrelliera;
+import principalclass.RastrellieraDao;
+import principalclass.RastrellieraDaoImpl;
 
 public class TotemApp {
 	

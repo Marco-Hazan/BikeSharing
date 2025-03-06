@@ -11,11 +11,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import ClassiPrincipali.Bicicletta;
-import ClassiPrincipali.BiciclettaFactory;
-import ClassiPrincipali.Rastrelliera;
 import Eccezioni.MorsaSbagliataException;
 import Eccezioni.PositionOccupiedException;
+import principalclass.Bicicletta;
+import principalclass.BiciclettaFactory;
+import principalclass.Rastrelliera;
 public class RastrellieraTest {
 
 	@Test

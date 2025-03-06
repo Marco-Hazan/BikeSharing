@@ -9,9 +9,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import Eccezioni.IllegalCardException;
 import application.UserApp;
 import controllers.appuser.RecData;
+import exceptions.IllegalCardException;
 import principalclass.AbbonamentoAnnuale;
 import principalclass.AbbonamentoFactory;
 import principalclass.AbbonamentoSettimanale;

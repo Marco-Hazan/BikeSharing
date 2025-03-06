@@ -2,7 +2,7 @@ package principalclass;
 
 import java.util.Set;
 
-import Eccezioni.UserNotFoundException;
+import exceptions.UserNotFoundException;
 
 public interface PersonaleDao {
 	

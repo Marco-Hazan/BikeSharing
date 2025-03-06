@@ -3,16 +3,15 @@ package principalclass;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
-
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.FullRackException;
-import Eccezioni.MorsaSbagliataException;
-import Eccezioni.NoFreeSpotException;
-import Eccezioni.PositionOccupiedException;
-
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Map.Entry;
+
+import exceptions.BikeNotFoundException;
+import exceptions.FullRackException;
+import exceptions.MorsaSbagliataException;
+import exceptions.NoFreeSpotException;
+import exceptions.PositionOccupiedException;
 /**
  * 
  */

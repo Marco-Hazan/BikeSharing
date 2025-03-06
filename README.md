@@ -11,7 +11,7 @@ This project is a **Bike Sharing Application** implemented in **Java**. The syst
 - **Admin Dashboard for Bike & Station Management**
 
 ## Technologies Used
-- **Java 8** (Core application logic)
+- **Java 11** (Core application logic)
 - **PostgreSQL** (Relational database)
 - **JUnit** (Testing framework)
 
@@ -19,7 +19,7 @@ This project is a **Bike Sharing Application** implemented in **Java**. The syst
 
 ### Prerequisites
 Ensure you have the following installed:
-- Java 8
+- Java 11
 - PostgreSQL (or any supported database)
 - Docker (optional for containerized deployment)
 
@@ -30,28 +30,13 @@ Ensure you have the following installed:
    cd bike-sharing
    ```
 2. **Configure the Database**
-   - Update `application.properties` or `application.yml` with database credentials.
+   - Go to src/application/principalclass/UtilFunc.java to configure credentials in order to access the database
 
 3. **Build & Run the Application**
    ```bash
    mvn clean install
    mvn spring-boot:run
-   ```
-
-4. **Access the Application**
-   - API Documentation: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-   - Web Application (if applicable): [http://localhost:8080](http://localhost:8080)
-
-## API Endpoints
-
-| Method | Endpoint | Description |
-|--------|---------|-------------|
-| `POST` | `/api/users/register` | Register a new user |
-| `POST` | `/api/users/login` | Authenticate a user |
-| `GET` | `/api/stations` | List all bike stations |
-| `GET` | `/api/bikes/available` | Check available bikes |
-| `POST` | `/api/rent` | Rent a bike |
-| `POST` | `/api/return` | Return a bike |
+   ```  
 
 ## Contribution Guidelines
 1. **Fork the Repository**

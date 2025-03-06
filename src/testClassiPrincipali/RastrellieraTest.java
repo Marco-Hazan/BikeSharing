@@ -2,6 +2,9 @@ package testClassiPrincipali;
 
 import org.junit.jupiter.api.Test;
 
+import exceptions.MorsaSbagliataException;
+import exceptions.PositionOccupiedException;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThrows;
@@ -11,8 +14,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import Eccezioni.MorsaSbagliataException;
-import Eccezioni.PositionOccupiedException;
 import principalclass.Bicicletta;
 import principalclass.BiciclettaFactory;
 import principalclass.Rastrelliera;

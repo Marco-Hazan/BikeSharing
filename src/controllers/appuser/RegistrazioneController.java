@@ -2,11 +2,11 @@ package controllers.appuser;
 
 import java.io.IOException;
 
-import Eccezioni.ExpiredCardException;
-import Eccezioni.IllegalCardException;
-import Eccezioni.RoofReachedException;
 import Main.MainUser;
 import application.UserApp;
+import exceptions.ExpiredCardException;
+import exceptions.IllegalCardException;
+import exceptions.RoofReachedException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

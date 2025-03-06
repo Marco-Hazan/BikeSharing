@@ -1,4 +1,4 @@
-package Eccezioni;
+package exceptions;
 
 public class MorsaSbagliataException extends RuntimeException {
 

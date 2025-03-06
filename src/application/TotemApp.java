@@ -1,11 +1,11 @@
 package application;
 import java.sql.Timestamp;
 
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.LoginException;
-import Eccezioni.MorsaSbagliataException;
-import Eccezioni.PositionOccupiedException;
-import Eccezioni.UserNotFoundException;
+import exceptions.BikeNotFoundException;
+import exceptions.LoginException;
+import exceptions.MorsaSbagliataException;
+import exceptions.PositionOccupiedException;
+import exceptions.UserNotFoundException;
 import principalclass.Bicicletta;
 import principalclass.BiciclettaFactory;
 import principalclass.Cliente;

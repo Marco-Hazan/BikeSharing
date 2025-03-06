@@ -6,8 +6,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Set;
 
-import Eccezioni.LoginException;
-import Eccezioni.UserNotFoundException;
+import exceptions.LoginException;
+import exceptions.UserNotFoundException;
 
 public class PersonaleDaoImpl implements PersonaleDao{
 

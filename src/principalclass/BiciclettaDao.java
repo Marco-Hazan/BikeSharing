@@ -2,7 +2,7 @@ package principalclass;
 
 import java.util.Set;
 
-import Eccezioni.BikeNotFoundException;
+import exceptions.BikeNotFoundException;
 
 public interface BiciclettaDao {
 

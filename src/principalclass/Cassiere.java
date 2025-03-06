@@ -1,6 +1,6 @@
 package principalclass;
 
-import Eccezioni.RoofReachedException;
+import exceptions.RoofReachedException;
 
 public class Cassiere {
 

@@ -1,4 +1,4 @@
-package Eccezioni;
+package exceptions;
 
 public class IllegalCardException extends RuntimeException {
 

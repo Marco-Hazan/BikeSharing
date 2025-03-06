@@ -8,9 +8,9 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.NoFreeSpotException;
 import application.PersonaleApp;
+import exceptions.BikeNotFoundException;
+import exceptions.NoFreeSpotException;
 import principalclass.BiciclettaFactory;
 import principalclass.Rastrelliera;
 import principalclass.RastrellieraDao;

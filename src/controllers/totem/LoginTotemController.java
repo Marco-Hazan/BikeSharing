@@ -3,9 +3,9 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import Eccezioni.LoginException;
 import Main.MainTotem;
 import application.TotemApp;
+import exceptions.LoginException;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -78,7 +78,7 @@ public class LoginTotemController {
     }
     
     public void showConclusa() {
-    	dettagli_corsa_field.setText("Da "+app.getCorsaConclusa().getRPartenza()+" a "+app.getCorsaConclusa().getRArrivo()+ " - "+ app.getCorsaConclusa().getPrice()+"€");
+    	dettagli_corsa_field.setText("Da "+app.getCorsaConclusa().getRPartenza()+" a "+app.getCorsaConclusa().getRArrivo()+ " - "+ app.getCorsaConclusa().getPrice()+"ï¿½");
     	loginPane.setVisible(false);
     	corsaconclusaPane.setVisible(true);
     	Timer timer = new Timer();

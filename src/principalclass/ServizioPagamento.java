@@ -1,8 +1,8 @@
 package principalclass;
 
 
-import Eccezioni.IllegalCardException;
-import Eccezioni.RoofReachedException;
+import exceptions.IllegalCardException;
+import exceptions.RoofReachedException;
 
 public class ServizioPagamento {
 	private CartaDao carte;

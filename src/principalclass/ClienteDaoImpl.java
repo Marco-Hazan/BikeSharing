@@ -9,10 +9,10 @@ import java.sql.Statement;
 import java.util.HashSet;
 import java.util.Set;
 
-import Eccezioni.ExpiredCardException;
-import Eccezioni.LoginException;
-import Eccezioni.TypeNotFoundException;
-import Eccezioni.UserNotFoundException;
+import exceptions.ExpiredCardException;
+import exceptions.LoginException;
+import exceptions.TypeNotFoundException;
+import exceptions.UserNotFoundException;
 
 /**
  * 

@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import Eccezioni.BikeNotFoundException;
+import exceptions.BikeNotFoundException;
 
 public class BiciclettaFactory {
 	public static final String CLASSICA = "C";

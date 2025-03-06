@@ -3,12 +3,12 @@ package application;
 
 import java.util.Random;
 
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.IllegalCardException;
-import Eccezioni.LoginException;
-import Eccezioni.RoofReachedException;
-import Eccezioni.UserNotFoundException;
 import controllers.appuser.RecData;
+import exceptions.BikeNotFoundException;
+import exceptions.IllegalCardException;
+import exceptions.LoginException;
+import exceptions.RoofReachedException;
+import exceptions.UserNotFoundException;
 import principalclass.Abbonamento;
 import principalclass.AbbonamentoFactory;
 import principalclass.Bicicletta;

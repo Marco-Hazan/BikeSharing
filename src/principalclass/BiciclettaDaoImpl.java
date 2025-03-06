@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.HashSet;
 import java.util.Set;
 
-import Eccezioni.BikeNotFoundException;
+import exceptions.BikeNotFoundException;
 
 public class BiciclettaDaoImpl implements BiciclettaDao {
 

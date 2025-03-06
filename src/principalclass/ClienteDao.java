@@ -4,7 +4,7 @@ package principalclass;
 import java.sql.SQLException;
 import java.util.Set;
 
-import Eccezioni.UserNotFoundException;
+import exceptions.UserNotFoundException;
 
 /**
  * 

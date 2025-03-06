@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import Eccezioni.BikeNotFoundException;
 import Main.MainTotem;
 import application.TotemApp;
+import exceptions.BikeNotFoundException;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

@@ -5,9 +5,9 @@ import java.util.Calendar;
 
 import java.util.Random;
 
-import Eccezioni.ExpiredCardException;
-import Eccezioni.IllegalCardException;
-import Eccezioni.RoofReachedException;
+import exceptions.ExpiredCardException;
+import exceptions.IllegalCardException;
+import exceptions.RoofReachedException;
 
 /**
  * Questa classe rappresenta un oggetto carta di credito associata a un abbonamento bikesharing.

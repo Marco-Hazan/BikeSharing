@@ -11,9 +11,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import Eccezioni.ExpiredCardException;
-import Eccezioni.RunNotFoundException;
-import Eccezioni.UserNotFoundException;
+import exceptions.ExpiredCardException;
+import exceptions.RunNotFoundException;
+import exceptions.UserNotFoundException;
 
 /**
  * 

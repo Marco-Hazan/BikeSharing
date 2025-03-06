@@ -3,10 +3,10 @@ package controllers.apppersonale;
 import java.io.IOException;
 import java.util.Set;
 
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.NoFreeSpotException;
 import Main.MainPersonale;
 import application.PersonaleApp;
+import exceptions.BikeNotFoundException;
+import exceptions.NoFreeSpotException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

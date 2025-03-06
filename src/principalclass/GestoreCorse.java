@@ -3,8 +3,9 @@ package principalclass;
 import java.sql.Timestamp;
 import java.util.HashSet;
 import java.util.Set;
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.RunNotFoundException;
+
+import exceptions.BikeNotFoundException;
+import exceptions.RunNotFoundException;
 
 /**
  * Questa classe rappresenta l'ente nel servizio bikesharing che si occupa di iniziare e terminare le corse gestendo i relativi pagamenti

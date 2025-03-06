@@ -2,12 +2,12 @@ package application;
 
 import java.util.Set;
 
-import Eccezioni.BikeNotFoundException;
-import Eccezioni.FullRackException;
-import Eccezioni.LoginException;
-import Eccezioni.NoFreeSpotException;
-import Eccezioni.RackNotFoundException;
-import Eccezioni.UserNotFoundException;
+import exceptions.BikeNotFoundException;
+import exceptions.FullRackException;
+import exceptions.LoginException;
+import exceptions.NoFreeSpotException;
+import exceptions.RackNotFoundException;
+import exceptions.UserNotFoundException;
 import principalclass.Bicicletta;
 import principalclass.BiciclettaDao;
 import principalclass.BiciclettaDaoImpl;

@@ -4,7 +4,7 @@ import java.sql.Timestamp;
 import java.util.List;
 import java.util.Set;
 
-import Eccezioni.RunNotFoundException;
+import exceptions.RunNotFoundException;
 
 /**
  * 

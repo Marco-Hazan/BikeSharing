@@ -21,7 +21,7 @@ This project follows several design patterns, including:
 
 This project includes a comprehensive 50-page PDF document that details how the application works. The document contains:
 
-- se Case Diagrams
+- Use Case Diagrams
 
 - User Scenarios
 

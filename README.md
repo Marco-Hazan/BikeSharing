@@ -33,22 +33,27 @@ Ensure you have the following installed:
    - Go to src/application/principalclass/UtilFunc.java to configure credentials in order to access the database
 
 3. **Build & Run the Application**
-   ```bash
-   mvn clean install
-   mvn spring-boot:run
-   ```  
+Eclipse Project Setup
 
-## Contribution Guidelines
-1. **Fork the Repository**
-2. **Create a Feature Branch** (`feature/your-feature`)
-3. **Commit Your Changes**
-4. **Push the Branch & Create a Pull Request**
+This project is designed to be run in Eclipse. In order to run it successfully, you need to manually add the following dependencies to the classpath:
+
+JavaFX JARs for GUI components (if applicable)
+
+JUnit for testing
+
+PostgreSQL JDBC Driver to connect to the database
+
+Additionally, update the VM arguments when running the application:
+
+-Djavafx.verbose=true --module-path "ls/lib" --add-modules javafx.controls,javafx.fxml
+
+This project is designed to be run in Eclipse. In order to run it successfully, you need to manually add the following dependencies:
+
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
-For any issues or suggestions, feel free to open an issue or contact me at `your-email@example.com`.
+
 
 ---
 ### 🚀 Happy Coding!
